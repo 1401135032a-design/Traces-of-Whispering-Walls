@@ -1,0 +1,10 @@
+{
+  "name": "幽壁寻迹.",
+  "description": "手执一盏孤烛，重返盛唐大墓幽暗之境，通过第一人称地宫漫游、数字壁画活化与数字修复工坊，重探唐代大墓文物的绝代风华。",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

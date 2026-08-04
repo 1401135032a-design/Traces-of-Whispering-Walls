@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;600&family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@300;400;500;700;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Mono&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", "Noto Serif SC", "STSong", "KaiTi", serif;
+  --font-sans: "Inter", "Microsoft YaHei", sans-serif;
+  --font-mono: "Space Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-brush: "Ma Shan Zheng", "Kaiti", cursive;
+}
+
+/* Elegant border frames and ornaments */
+.frame-border {
+  border-color: rgba(242, 239, 235, 0.1);
+}
+
+.text-gold {
+  color: #c6a35f;
+}
+
+.border-gold {
+  border-color: #c6a35f;
+}
+
+.bg-gold {
+  background-color: #c6a35f;
+}
+
+/* Ancient Mural Paper/Stone Texture overlay */
+.bg-mural-texture {
+  position: relative;
+}
+
+.bg-mural-texture::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.12;
+  mix-blend-mode: overlay;
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(245, 158, 11, 0.25) 0%, transparent 80%),
+    repeating-linear-gradient(45deg, rgba(142, 94, 46, 0.4) 0px, rgba(142, 94, 46, 0.4) 1px, transparent 1px, transparent 12px),
+    repeating-linear-gradient(-45deg, rgba(142, 94, 46, 0.4) 0px, rgba(142, 94, 46, 0.4) 1px, transparent 1px, transparent 12px);
+  background-size: 100% 100%, 24px 24px, 24px 24px;
+  z-index: 1;
+}
+
+/* Tang dynasty style subtle text shadow for floating titles */
+.tang-text-shadow {
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.95), 0 0 15px rgba(245, 158, 11, 0.15);
+}
